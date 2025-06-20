@@ -1,5 +1,8 @@
 name: CI Workflow
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -8,6 +11,7 @@ on:
     branches:
       - main
 
+# ... rest of your workflow ...
 jobs:
   build:
     runs-on: ubuntu-latest
